@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b676c64a.chunk.css",
+    "main.js": "/static/js/main.fc9d995a.chunk.js",
+    "main.js.map": "/static/js/main.fc9d995a.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.3547befd.js",
+    "runtime-main.js.map": "/static/js/runtime-main.3547befd.js.map",
+    "static/js/2.3895792f.chunk.js": "/static/js/2.3895792f.chunk.js",
+    "static/js/2.3895792f.chunk.js.map": "/static/js/2.3895792f.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.b676c64a.chunk.css.map": "/static/css/main.b676c64a.chunk.css.map",
+    "static/js/2.3895792f.chunk.js.LICENSE.txt": "/static/js/2.3895792f.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/FiraSans-Regular.1c0bf072.ttf",
+    "static/media/CovidTable.css": "/static/media/arrow_up_active.4bd3604e.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3547befd.js",
+    "static/js/2.3895792f.chunk.js",
+    "static/css/main.b676c64a.chunk.css",
+    "static/js/main.fc9d995a.chunk.js"
+  ]
+}
