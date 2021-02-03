@@ -1,0 +1,101 @@
+.summary {
+    margin: 10px 0 20px;
+    line-height: 1.5;
+    border-spacing: 1px;
+    width: 800px;
+    user-select: none;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .page {
+        width: calc(100% - 40px) !important;
+    }
+    
+    .summary {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #root {
+        font-size: 12px;
+    }
+}
+
+
+.header {
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 2;
+    font-weight: normal;
+}
+
+.summary tbody:before {
+    content:"@";
+    display:block;
+    line-height:15px;
+    text-indent:-99999px;
+}
+
+.summary tbody {
+    display: table;
+    width: 100%;
+    font-size: 1em;
+    color: black;
+}
+
+.summary tbody tr td {
+    width: 50%;
+    padding: 0 10px;
+}
+
+.summary tbody tr td:nth-of-type(2) {
+    text-align: right;
+}
+
+.grey {
+    background-color: #596275;
+}
+
+.yellow {
+    background-color: #f5cd79;
+}
+
+.blue {
+    background-color: #546de5;
+}
+
+.red {
+    background-color: #c44569;
+}
+
+@keyframes load {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+.loading {
+    margin-top: 30px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.loading div {
+    width: 15px; height: 15px;
+    border-radius: 50%;
+    background-color: #f3a683;
+    margin: 0 4px !important;
+
+    animation: load;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    animation-duration: 300ms;
+    animation-iteration-count: infinite;
+}
+
+.loading div:nth-of-type(1) { animation-delay: 0ms; }
+.loading div:nth-of-type(2) { animation-delay: 100ms; }
+.loading div:nth-of-type(3) { animation-delay: 200ms; }

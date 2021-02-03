@@ -1,0 +1,120 @@
+.arrow_up {
+    cursor: pointer;
+    display: inline-block;
+    background-image: url('./arrow_up.png');
+    background-size: 12px 12px;
+    width: 12px; height: 12px;
+}
+
+.arrow_up.sort_active {
+    background-image: url('./arrow_up_active.png');
+}
+
+.arrow_down {
+    cursor: pointer;
+    display: inline-block;
+    background-image: url('./arrow_up.png');
+    background-size: 12px 12px;
+    width: 12px; height: 12px;
+    transform: rotate(180deg);
+}
+
+.arrow_down.sort_active {
+    background-image: url('./arrow_up_active.png');
+}
+
+.summary.table {
+    margin-top: 20px;
+    font-size: 0.7em;
+}
+
+.summary.table tr {
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.summary.table thead tr td:first-child {
+    flex: 2;
+}
+
+/*vertically align titles*/
+.summary.table thead tr:nth-of-type(1) td {
+    display: table;
+    height: 40px;
+}
+
+.summary.table thead tr:nth-of-type(1) td span {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.summary.table tr td {
+    padding: 0;
+    flex: 1;
+}
+
+/*borders*/
+.summary.table thead tr:last-of-type {
+    text-align: center;
+    border-bottom: 2px solid white;
+}
+
+.summary.table tr td:nth-child(2n) {
+    border-right: 2px solid white;
+}
+
+/*colors*/
+.summary.table tr td:nth-of-type(1) {
+    background-color: #596275;
+    color: white;
+}
+
+.summary.table tr td:nth-of-type(2), .summary tr td:nth-of-type(3) {
+    background-color: #f5cd79;
+    color: black;
+}
+
+.summary.table tr td:nth-of-type(4), .summary tr td:nth-of-type(5) {
+    background-color: #546de5;
+}
+
+.summary.table tr td:nth-of-type(6), .summary tr td:nth-of-type(7) {
+    background-color: #c44569;
+}
+
+.summary.table tbody td {
+    padding-top: 15px; /*used for centering, fixed layout*/
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.summary.table tbody tr {
+    height: 50px;
+}
+
+.summary.table tbody tr td {
+    text-align: center;
+    border-bottom: 2px solid white;
+}
+
+.summary.table tbody tr > td:first-child {
+    padding-top: 0;
+    height: 50px;
+    display: table;
+    flex: 2;
+}
+
+.summary.table tbody a {
+    color: inherit;
+    text-decoration: none;
+    display: table-cell;
+    vertical-align: middle;
+    transition: color 50ms ease-out;
+}
+
+.summary.table tbody a:hover {
+    color: #63cdda;
+}

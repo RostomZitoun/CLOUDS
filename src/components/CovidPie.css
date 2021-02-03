@@ -1,0 +1,9 @@
+.covidpiechart {
+    color: white;
+    width: 100%;
+    height: calc(2.5*100px + 50px);
+}
+
+.full {
+    width: 100%;
+}
